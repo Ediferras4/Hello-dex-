@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLODEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>HELLODEX</h1>
+
+        <button id="connectBtn">Connect Wallet</button>
+
+        <div class="swap-box">
+
+            <label>From:</label>
+            <select id="fromToken">
+                <option value="USDC">USDC</option>
+                <option value="HELLO">HELLO</option>
+            </select>
+            <input id="fromAmount" type="number" placeholder="Amount">
+
+            <label>To:</label>
+            <select id="toToken">
+                <option value="HELLO">HELLO</option>
+                <option value="USDC">USDC</option>
+            </select>
+            <input id="toAmount" type="text" placeholder="0.0" disabled>
+
+            <button id="swapBtn">Swap</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
